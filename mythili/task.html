@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>ARROW FTN 1</h1>
+	<p >welcome to our company</p>
+	<p id="div"></p>
+	<script>
+		world = function(){
+			return "hello army!";
+		}
+		document.getElementById("div").innerHTML = world();
+
+	</script>
+
+	<h2>ARROW FTN 2</h2>
+	<p>welcome to our company</p>
+	<p id="cls"></p>
+	 <script >
+	 	world = () => {
+	 		return "hello army!";
+	 	}
+	 	document.getElementById("cls").innerHTML=world();
+	 </script>
+	 
+	 <h2>ARROW FTN 3</h2>
+     <p>welcome to our company</p>
+     <p id="cld"></p>
+     <script >
+          	world = () => "hello world";
+          	document.getElementById("cld").innerHTML=world();
+     </script>
+     <h1>variable-var</h1>
+     <p id="var1"></p>
+     <script>
+     	let a=10;
+     	let b=20;
+     	//  		
+     	let c=a+b;
+     	document.getElementById("var1").innerHTML= "the sum of the value is:" + c;
+     </script>
+     <h1>variable-let</h1>
+     <p id="let1"></p>
+     <script>
+     	var firstName = 'mythili';
+     	var lastName = 'saminathan';
+     	var fullName = firstName +' '+ lastName;
+     	document.getElementById("let1").innerHTML=fullName;
+
+     </script>
+     <h1>variable-const</h1>
+     <p id="cons"></p>
+     <script>
+     	const r=30;
+     	const m=78;
+     	const val = r +m ;
+     	// document.getElementById("cons").innerHTML= val;
+     	console.log(val);
+     	 </script>
+
+     <h1>destructuring-array </h1>
+     
+     <script>
+     	const person = {
+     		age: '27',
+     		name: 'mara',
+     		height:'160cm',
+     		weight: '50kg'
+     	}
+     	const {name,weight} = person;
+     	console.log(name,weight);
+  
+     </script>
+<hr>
+
+     
+
+<h1>obj des</h1>
+<p id="let2"></p>
+<script>
+	const myapple = {
+		color: 'red',
+		size: 'big',
+		species:'kashmir'
+	}
+	myfavapple(myapple);
+    function	myfavapple ({color,size,species}){
+	const apple1 = 'apple color is:'+' '+ color+'the size will be'+' '+size+' '+'species is:'+species ;
+	document.getElementById("let2").innerHTML=apple1;
+    }
+
+
+</script>
+
+<h1>object merging</h1>
+<p id="para"></p>
+<script>
+	const car = {
+		color : 'red',
+		brand : 'innova',
+		year : '2021'
+
+	}
+	const newcar = {
+		model : 'ford',
+		seat : '7seats',
+		mileage : '130km'
+	}
+	const updatedcar = {...car,...newcar}
+	// document.write(updatedcar);
+	console.log(updatedcar);
+</script>
+<h1>array</h1>
+<p id="arr"></p>
+<script>
+	const stugrp1 = ['mythili','nandhini','mommy'];
+	const stugrp2 = ['fahee','poorvi','moni'];
+	const totalgrp = [...stugrp1,...stugrp2];
+	document.write(totalgrp);
+</script>
+
+
+<h1>ternary operator</h1>
+<p id="top"></p>
+<script>
+	var mark1=70;
+	 var result = (mark1 >= 80)  ? "distinction" : "fail";
+	document.write(result);
+
+
+</script>
+<h1>array concept</h1>
+<script>
+	const name1 = ['gkl','bala','sam'];
+	document.write(name1[2]);
+</script>
+
+
+<script>
+	const num1 = ["viji","mythu","ram"];
+    num1.unshift ("sita","clm");
+    console.log(num1);
+
+</script>
